@@ -3,10 +3,17 @@ import { uploadImage, deleteImage } from "../Library/cloudinary.js";
 import fs from "fs-extra";
 
 
-export const getPosts = async (req, res) => res.send("hola")
+export const getPosts = async (req, res) => {
+    try {
+        const posts = await Post.find()
+        res.send(posts)
+    } catch (error) {
+        return res.status(500).json({ message: error.message })
+    }
+}
 export const createPosts = async (req, res) => {
     try {
-        const { title, description, user } = req.body
+        const { title, user } = req.body
         let image;
         if (req.files?.image) {
             const result = await uploadImage(req.files.image.tempFilePath)
@@ -17,7 +24,7 @@ export const createPosts = async (req, res) => {
             await fs.remove(req.files.image.tempFilePath)
         }
 
-        const newPost = new Post({ title, description, image, user })
+        const newPost = new Post({ title, image, user })
         await newPost.save()
         return res.json(newPost)
     } catch (error) {
@@ -27,7 +34,7 @@ export const createPosts = async (req, res) => {
 
 export const updatingPosts = async (req, res) => {
     try {
-        await Post.findByIdAndUpdate(req.params.id, req.body, { new: true })
+        const post = await Post.findByIdAndUpdate(req.params.id, req.body, { new: true })
         return res.send("received")
     } catch (error) {
         return res.status(500).json({ message: error.message })

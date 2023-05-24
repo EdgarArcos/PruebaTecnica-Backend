@@ -42,6 +42,10 @@ Poder seguir otros usuarios crear algun tipo de filtro para los distintos posts 
 
 ## Imagenes Gifed
 
+
+https://github.com/EdgarArcos/PruebaTecnica-Backend/assets/119437039/3dcad49f-ce46-4860-b5fd-107690e578f5
+
+
 ![Imagen GifEd](./imgreadme/CapturaGifed.PNG)
 ![Imagen GifEd](./imgreadme/CapturaPostgifed.PNG)
 ![Imagen GifEd](./imgreadme/CapturaSearchgifed.PNG)

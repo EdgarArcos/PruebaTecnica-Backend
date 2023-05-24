@@ -36,6 +36,7 @@ Poder seguir otros usuarios crear algun tipo de filtro para los distintos posts 
 5. Abrir desde Visual Studio Code el repositorio previamente descargado
 6. Abrir la consola y ejecutar el comando npm i (se instalara todas las librerias anteriormente dichas)
 7.Crear una base de datos y rellenar tu punto env con las credenciales necesarias
+7. Descargar el otro repositorio con el mismo nombre que este pero Frontend y ponerlo en marcha
 7. Ejecutar npm run dev para que arranque el aplicacion
 8. Hacer las pruebas que requiera con Postman o ThunderClient
 

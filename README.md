@@ -42,5 +42,6 @@ Poder seguir otros usuarios crear algun tipo de filtro para los distintos posts 
 
 ## Imagenes Gifed
 
-
-
+![Imagen GifEd](./imgreadme/CapturaGifed.PNG)
+![Imagen GifEd](./imgreadme/CapturaPostgifed.PNG)
+![Imagen GifEd](./imgreadme/CapturaSearchgifed.PNG)

@@ -6,7 +6,7 @@ import cors from "cors";
 
 const app = express()
 connectDB()
-app.use(cors())
+app.use(cors(['http://localhost:4000']))
 app.use(express.json());
 app.use(fileUpload({
     useTempFiles: true,
